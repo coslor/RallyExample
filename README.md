@@ -16,6 +16,9 @@ a template uses a variable that has not
 been assigned, as well as provide a way to escape the strings
 ("hello ${${name}}" -> "hello ${Billy}")
 
+------------------
+- Implementation -
+------------------
 The code takes two approaches to solving the problem:
 1) Don't write a new template engine, use an existing one! The VelocitySubstituter uses
   the Apache Velocity template engine. It's a little logn in the tooth, but it's quite 
